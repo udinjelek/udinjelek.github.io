@@ -1,0 +1,139 @@
+*{
+
+	box-sizing: border-box;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+html {
+	height: 100%;
+}
+
+body{
+	margin:0;
+	padding: 0;
+	background:rgb(25, 161, 173);
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	display: flex;
+	justify-content: space-between;
+	max-height: 800px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.containerMain{
+	background-color: brown;
+	position: relative;
+	min-width: 40%;
+	max-width: 650px;
+	padding:100px;
+}
+.containerPhoto{
+	
+	height:800px;
+	width:610px ;
+
+	right: 0px;
+	
+	
+
+}
+
+.containerPhoto img{
+	height: 100%;
+	max-height: 800px;
+	object-fit: cover;
+	min-width:100%;
+}
+
+img{
+	height: auto;
+	object-fit: fill;
+
+}
+
+
+.iconicTitle{
+	font-weight: bolder;
+}
+
+.fontSizeHigh{
+	font-size: 2.2em;
+	margin: 2.2em 0 1em 0;
+}
+
+.inputArea{
+	border-style:solid;
+	border-color: white;
+	border-width: 1px;
+	height: 2em;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 2em;
+}
+
+.inputNormal{
+	width: 82%;
+	height: 100%;
+	margin-left: 1em;
+	background-color:inherit;
+	border-style: none;	
+}
+
+.inputError{
+	width: 82%;
+	height: 100%;
+	margin-left: 1em;
+	background-color:inherit;
+	border-style: none;
+	background-image: url("base-apparel-coming-soon-master/images/icon-error.svg");
+	background-repeat: no-repeat;
+	background-position-x:right;
+	background-position-y: center;
+	
+}
+
+.iconicTitle{
+	background-image: url("base-apparel-coming-soon-master/images/logo.svg");
+	background-repeat: no-repeat;
+	background-position-x:left ;
+	background-position-y: center;
+	width:158px;
+	height:33px;
+
+}
+
+
+.buttonSubmitEmail{
+	width: calc(4em + 3px);
+	height:calc(2em + 3px);
+	border-radius: 20px;
+	background-image: url("base-apparel-coming-soon-master/images/icon-arrow.svg");
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+	background-color: cyan;
+	
+
+}
+
+input:focus, button:focus{
+	outline: none;
+}
+
+.redText{
+	color: red;
+	margin: 0.5em 1em;
+}
+
+.blueText{
+	color:royalblue;
+	margin: 0.5em 1em;
+}

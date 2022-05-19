@@ -1,0 +1,84 @@
+
+
+*{
+
+	box-sizing: border-box;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+html {
+	height: 100%;
+}
+
+body{
+	margin:0;
+	padding: 0;
+	background:rgb(25, 161, 173);
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    font-size: 15px;
+
+}
+.containerMain{
+    max-width: 1440px;
+    padding: 10%;
+}
+
+.groupAbove{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainText{
+    width: 40%;
+
+}
+.bigerText{
+   font-size:xx-large;
+   font-weight: 700;
+}
+.normalText{
+}
+
+.starsCollection{
+    width: 50%;
+    
+    
+}
+.starContainerReview{
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+}
+.starRatingPic{
+
+}
+.starText{
+
+}
+.cardCollection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.cardContainerReview{
+    width: 32%;
+    background-color: blueviolet;
+    padding: 30px;
+    border-radius: 10px;
+    
+}
+.userName{
+
+}
+.userRank{
+
+}
+.userWords{
+
+}

@@ -1,0 +1,130 @@
+*{
+	
+	box-sizing: border-box;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+html {
+	height: 100%;
+}
+
+body{
+	margin:0;
+	padding: 0;
+	background:rgb(25, 161, 173);
+	height: 100%;
+}
+
+.backgroundUp {
+	
+	background-image: url("profile-card-component-main/images/bg-pattern-top.svg");
+	background-repeat: no-repeat;
+	width:978px ;
+	height:978px;
+	position: fixed;
+	bottom: 40%;
+	right:51%;
+	z-index: -1;
+}
+
+.backgroundDown {
+	
+	background-image: url("profile-card-component-main/images/bg-pattern-bottom.svg");
+	background-repeat: no-repeat;
+	width:978px ;
+	height:978px;
+	position: fixed;
+	top: 55%;
+	left:45%;
+	z-index: -1;
+}
+
+.container{
+	display: flex;	
+	justify-content: center;
+	height: 100%;
+	align-items: center;
+}
+.card{
+	
+	width: 350px;
+	height: min-content;
+	background:white;
+	background-image: url("profile-card-component-main/images/bg-pattern-card.svg");
+	background-repeat: no-repeat;	
+	border-radius: 5%;
+	
+}
+
+.photoHolder{
+	text-align: center;
+
+}
+.photoInfo{
+	border-radius: 50%;
+	margin-top: 85px;
+	
+	border-style:solid;
+	border-color: white;
+	border-width: 7px;
+	
+}
+
+
+.mainInfo{
+	text-align: center;
+	border-style:solid;
+	border-width: 2px;
+	border-color: white;
+	border-bottom-color:#EEE;
+	
+}
+
+
+.infoUpper{
+	font-weight: bold;
+	color:#555;
+	font-size: 1.1em;
+	padding: 0.4em;
+}
+
+.infoUpper .infoAdditional{
+	font-weight: normal;
+	color:#999;
+	font-size: 1.1em;
+	padding: 0.4em;
+}
+
+.infoDown {
+	font-weight:bold;
+	color:#999;
+	font-size: 0.8em;
+	padding-top: 0;
+	padding-bottom:1em;
+}
+
+
+
+/*
+.divideSegment{
+	
+	list-style-type: none;
+}
+*/
+
+.additionalInfo{
+	
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+}
+
+.additionalInfoSpan{
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+}
+
+
