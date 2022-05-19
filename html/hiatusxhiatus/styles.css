@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+@import url('https://fonts.googleapis.com/css?family=Metal+Mania:300,400');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap:300,400');
+
+@font-face {
+	font-family: "Monoglyceride";
+	src: url("fonts/Monoglyceride.ttf") format("tff"),
+		url("fonts/MonoglycerideDemiBold.ttf") format("tff"),
+	;
+}
+*{
+	box-sizing: border-box;
+	font-family: Raleway;
+	color: #777;
+}
+
+html,body{
+	margin:0; 
+	padding: 0;
+}
+
+.nav ul{
+	margin: 0;
+}
+
+.nav li{
+	display: inline;
+}
+
+.nav a{
+	display: inline-block;
+	padding: .5em;
+	color: white;
+	text-decoration: none;
+}
+
+.main-nav{
+	text-align: center;
+	font-size: 1.1em;
+	font-weight: lighter;
+	border-bottom: 1px solid rgba(255,255,255,.3);
+}
+
+.main-nav li{
+	padding: 0 5%;
+}
+.nav a:hover{
+	background-color: rgba(255,255,255,.3)
+}
+.main-header{
+	background-color: rgba(47, 47, 47, 0.6);
+	background-image: url('images/background-header.jpg');
+	background-blend-mode: multiply;
+	background-size: cover;
+}  
+.band-name{
+	text-align: center;
+	margin: 0; 
+	font-size: 4em;
+	font-family: "Monoglyceride.ttf";
+	font-weight: normal;
+	color: white;
+}
+
+.band-name-large{
+	font-size: 8em;
+}
+
+.content-section{
+	margin: 1em;
+	min-height: 500px;
+}
+
+.container{
+	max-width: 900px ;
+	margin: 0 auto;
+	padding: 0 1.5em ;
+}
+
+.section-header{
+	font-family: 'Macondo', cursive;
+	font-weight: normal;
+	color: #333;
+	text-align: center;
+	font-size: 2.5em ;
+}
+
+.about-band-image{
+	float: left;
+	width: 200px;
+	margin: 15px;
+	border-radius: 10%;
+}
+
+.main-footer{
+	background-color: rgb(16, 92, 84);
+	color: white;
+	padding: .25em 0;
+}
+
+.main-footer-container{
+	display: flex;
+	align-items: center;
+}
+
+.main-footer-container ul{
+	flex-grow: 1;
+	text-align: end;
+}
+
+.footer-nav li{
+	padding: 0 .5em;
+}
+
+.footer-nav img{
+	width: 50px;
+}
