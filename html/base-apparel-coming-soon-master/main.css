@@ -1,8 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
 *{
 
 	box-sizing: border-box;
-	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+	font-family: 'Josefin Sans', sans-serif;
 }
+
 
 
 html {
@@ -12,7 +17,7 @@ html {
 body{
 	margin:0;
 	padding: 0;
-	background:rgb(25, 161, 173);
+	background:rgb(255, 255, 255);
 	height: 100%;
 	display: flex;
 	justify-content: center;
@@ -22,26 +27,32 @@ body{
 .container{
 	display: flex;
 	justify-content: space-between;
-	max-height: 800px;
+	max-height: 1440px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background: white;
+}
+
+
+.mobile{
+	display:none;
+}
+
+.web{
+	display: block;
 }
 
 .containerMain{
-	background-color: brown;
+	background-image: url("base-apparel-coming-soon-master/images/bg-pattern-desktop.svg");
 	position: relative;
-	min-width: 40%;
-	max-width: 650px;
+	width: 60%;
+	max-width: 800px;
 	padding:100px;
 }
+
 .containerPhoto{
-	
-	height:800px;
+	max-height:800px;
 	width:610px ;
-
 	right: 0px;
-	
-	
-
 }
 
 .containerPhoto img{
@@ -62,16 +73,32 @@ img{
 	font-weight: bolder;
 }
 
+
 .fontSizeHigh{
-	font-size: 2.2em;
-	margin: 2.2em 0 1em 0;
+	font-size: 3.2em;
+	margin: 2.7em 0 1em 0;
+	letter-spacing: 0.3em;
+}
+
+.fontSizeMed{
+	font-size: 1.2em;
+	line-height: 1.6;
+}
+
+.fontColorNo02{
+	color: hsl(0, 36%, 70%);
+}
+
+
+.fontColorNo01{
+	color:hsl(0, 6%, 24%);
 }
 
 .inputArea{
 	border-style:solid;
-	border-color: white;
+	border-color: hsla(0, 6%, 24%, 0.41);
 	border-width: 1px;
-	height: 2em;
+	height: 2.2em;
 	border-radius: 20px;
 	display: flex;
 	justify-content: space-between;
@@ -112,16 +139,20 @@ img{
 
 
 .buttonSubmitEmail{
-	width: calc(4em + 3px);
-	height:calc(2em + 3px);
+	width: calc(5em + 3px);
+	height:calc(3em + 3px);
 	border-radius: 20px;
+	background: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.buttonArrow{
 	background-image: url("base-apparel-coming-soon-master/images/icon-arrow.svg");
 	background-repeat: no-repeat;
 	background-position-x: center;
 	background-position-y: center;
-	background-color: cyan;
-	
-
+	width: 3px;
+	padding: 8px;
 }
 
 input:focus, button:focus{
@@ -137,3 +168,78 @@ input:focus, button:focus{
 	color:royalblue;
 	margin: 0.5em 1em;
 }
+
+/* ========================================================= MEDIA QUERY ============================================ */
+/* ========================================================= MEDIA QUERY ============================================ */
+/* ========================================================= MEDIA QUERY ============================================ */
+
+@media screen and (max-width: 810px) {	
+	*{
+	box-sizing: border-box;
+	}
+	.containerMain{
+		display:flex;
+		flex-direction: column;
+		justify-content:space-around;
+		width: 100%;
+		height: auto;
+		margin: 0;
+		padding: 0;
+	}
+
+	.container{
+		display: flex;
+		margin: 0;
+		padding: 0;
+		min-height: 100%;
+	}
+
+	.iconicTitle{
+		margin: 0 30px;
+		padding: 0;
+	}
+
+	.fontSizeHigh{
+		margin: 0 15px;
+		padding: 0;
+		font-size:2.2em;
+		text-align: center;
+	}
+
+	.fontSizeMed{
+		margin: 0 15px;
+		padding: 0;
+		text-align: center;
+		font-size: 1.2em;
+		line-height: 1.1;
+	}
+
+	.inputArea{
+		margin: 0 15px;
+		padding: 0;
+		font-size: 1.2em;
+	}
+	.containerPhoto{
+		width: 100%;
+		height: auto;
+		
+		margin: 0;
+		padding: 0;
+	}
+
+	.redText{
+		text-align: center;
+	}
+	
+	.blueText{
+		text-align: center;
+		
+	}
+
+	.mobile{
+		display:block;
+	}
+	.web{
+		display: none;
+	}
+  }
